@@ -1,0 +1,48 @@
+AddDefaultCharset utf-8
+
+#<IfModule mod_rewrite.c>
+#RewriteEngine On
+#RewriteBase /
+#RewriteCond %{REMOTE_ADDR} !=127.0.0.1
+#RewriteCond %{REQUEST_FILENAME} !modules/site_close
+#RewriteRule ^.* modules/site_close/index.php [L]
+#</IfModule>
+
+RewriteEngine on
+Options +FollowSymlinks
+
+
+#RewriteBase /
+RewriteCond %{HTTP_HOST} ^magnetic\.com
+RewriteRule ^(.*)$ http://www.sk-mebli.com/$1 [R=301,L]
+
+RewriteCond %{THE_REQUEST} ^GET\ .*/index\.(php|html)\ HTTP
+RewriteRule ^(.*)index\.(php|html)$ /$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteRule ^(.*)$ /$1/ [R=301,L]
+
+RewriteRule ^catalog/$								catalog.php [QSA,L]
+RewriteRule ^catalog/page=([0-9]+)/$				catalog.php?page_NO=$1 [QSA,L]
+RewriteRule ^product/.*-id([0-9]+)/$				product.php?id_product=$1 [QSA,L]
+RewriteRule ^insert-order/$ 						insert_order.php [QSA,L]
+
+RewriteRule ^register/$ register.php [QSA,L]
+RewriteRule ^user_change/$ user_change.php [QSA,L]
+RewriteRule ^forgot/([A-Za-z0-9@.-]+)*(/*)$ forgot.php?login=$1 [QSA,L]
+
+ErrorDocument 400 /error.php?400
+ErrorDocument 401 /error.php?401
+ErrorDocument 403 /error.php?403
+ErrorDocument 404 /error.php?404
+ErrorDocument 500 /error.php?500
+
+redirect /_vti_bin http://www.microsoft.com
+redirect /scripts http://www.microsoft.com
+redirect /MSADC http://www.microsoft.com
+redirect /c http://www.microsoft.com
+redirect /d http://www.microsoft.com
+redirect /_mem_bin http://www.microsoft.com
+redirect /msadc http://www.microsoft.com
+RedirectMatch (.*)\cmd.exe$ http://www.microsoft.com 
