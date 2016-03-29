@@ -1,0 +1,229 @@
+/*!
+ * Start Bootstrap - Modern Business HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    padding-top: 65px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.navbar-fixed-top {
+  z-index: 930;
+}
+
+.container-bg {
+	background: #fff;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.img-portfolio {
+    margin-bottom: 30px;
+}
+
+
+.block-login {
+  width: 332px;
+  left: -250px;
+}
+
+.block-login .login-content {
+  padding: 20px 30px;
+}
+
+.block-login .login-content .forgot {
+  float: right;
+  display: inline-block;
+}
+
+.le-select {
+  background-color: #fff;
+  border: 1px solid #ececec;
+  padding: 5px 16px 7px 5px;
+  color: #3d3d3d;
+  width: 100%;
+  font-size: 13px;
+  width: auto;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+}
+.le-select .le-select-in {
+  width: auto;
+  display: inline-block;
+  vertical-align: top;
+}
+.le-select select {
+  position: absolute;
+  width: 100%!important;
+  bottom: 0;
+  height: 32px!important;
+  left: 0px;
+  cursor: pointer;
+}
+
+.img-hover:hover {
+    opacity: 0.8;
+	-webkit-transition: all 0.3s ease-in-out;
+	   -moz-transition: all 0.3s ease-in-out;
+	    -ms-transition: all 0.3s ease-in-out;
+	     -o-transition: all 0.3s ease-in-out;
+	        transition: all 0.3s ease-in-out;
+
+    -webkit-transform: scale(1.05); /* Äëÿ Safari, Chrome, iOS */			
+	   -moz-transform: scale(1.05); /* Äëÿ Firefox */
+		-ms-transform: scale(1.05); /* Äëÿ IE */
+		 -o-transform: scale(1.05); /* Äëÿ Opera */
+			transform: scale(1.05);
+}
+
+a {
+	-webkit-transition: all 0.3s ease-in-out;
+	   -moz-transition: all 0.3s ease-in-out;
+	    -ms-transition: all 0.3s ease-in-out;
+	     -o-transition: all 0.3s ease-in-out;
+	        transition: all 0.3s ease-in-out;
+}
+
+
+.page-header {
+	color: #f47c3c;
+}
+
+.bordered {
+	border-bottom: 1px solid #f47c3c;
+}
+
+#owl-main .item{
+  margin: 0px;
+}
+
+#owl-main .item img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+#owl-last-photo .item{
+  margin: 3px;
+}
+#owl-last-photo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+	
+
+.error-404 {
+    font-size: 100px;
+}
+
+/* Pricing Page Styles */
+
+.price {
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.price sup {
+    top: -20px;
+    left: 2px;
+    font-size: 20px;
+}
+
+.period {
+    display: block;
+    font-style: italic;
+}
+
+.navbar-fixed-top
+{
+  border-bottom: 4px solid #89be3d;
+}
+
+/* Footer Styles */
+footer {
+  color: #fff;
+  margin-top: 20px;
+  padding: 20px 15px;
+  overflow-x: visible;
+  border-top: 4px solid #89be3d;
+  background: #93c54b; /* For browsers that do not support gradients */
+}
+
+footer a{
+	color:#fff;
+}
+
+footer a:hover{
+	text-decoration:none;;
+}
+
+
+footer .company-name {
+	font-size:24px;
+	
+}
+
+dt {
+  font-weight: normal;
+}
+dd{
+    font-style: italic;
+}
+
+#toTop {
+	position: fixed;
+	bottom: 78px;
+	right: 25px;
+	display: none;
+	filter:alpha(opacity=35);
+	-moz-opacity: 0.35;
+	-khtml-opacity: 0.35;
+	opacity: 0.35;
+}
+
+#map-canvas {
+  	width: 100%; 
+  	height: 300px;
+	margin: 0;
+	padding: 15px;
+}
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+	.block-login {
+	  width: 282px;
+	  left: -190px;
+	}
+
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1100px;
+  }
+}

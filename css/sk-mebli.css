@@ -1,0 +1,450 @@
+/*!
+ * Start Bootstrap - Modern Business HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+	background: url(../images/fon_dekor_big.jpg) repeat center top fixed;
+}
+
+.navbar-fixed-top {
+  z-index: 930;
+}
+
+.container-bg {
+	background: #F3F3F3 url(../images/main_bg.png) no-repeat center top 130px fixed;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.img-portfolio {
+    margin-bottom: 30px;
+}
+
+.sepia {
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'old-timey\'><feColorMatrix type=\'matrix\' values=\'0.14 0.45 0.05 0 0 0.12 0.39 0.04 0 0 0.08 0.28 0.03 0 0 0 0 0 1 0\'/></filter></svg>#old-timey");
+    -webkit-filter: sepia(1);
+    -webkit-filter: sepia(100%);
+    -moz-filter: sepia(100%);
+    -ms-filter: sepia(100%);
+    -o-filter: sepia(100%);
+    filter: sepia(100%);
+}
+
+.blackwhite {
+
+	-webkit-filter: grayscale(100%) brightness(10%) contrast(100%);
+}
+
+.grey {
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+}
+
+
+.img-hover:hover {
+    opacity: 0.8;
+	-webkit-transition: all 0.3s ease-in-out;
+	   -moz-transition: all 0.3s ease-in-out;
+	    -ms-transition: all 0.3s ease-in-out;
+	     -o-transition: all 0.3s ease-in-out;
+	        transition: all 0.3s ease-in-out;
+
+    -webkit-transform: scale(1.05); /* Для Safari, Chrome, iOS */			
+	   -moz-transform: scale(1.05); /* Для Firefox */
+		-ms-transform: scale(1.05); /* Для IE */
+		 -o-transform: scale(1.05); /* Для Opera */
+			transform: scale(1.05);
+}
+
+a {
+	-webkit-transition: all 0.3s ease-in-out;
+	   -moz-transition: all 0.3s ease-in-out;
+	    -ms-transition: all 0.3s ease-in-out;
+	     -o-transition: all 0.3s ease-in-out;
+	        transition: all 0.3s ease-in-out;
+			
+		color: #B82656;
+}
+
+a.hover {
+		color: #ff0000;
+}
+
+
+
+#logo_header {
+	padding:10px 100px;
+	width:100%;
+	height:100%;
+	background:transparent url(../images/logo_1.png) no-repeat center center;
+}
+
+.page-header {
+	color: #53330E;
+}
+
+.text-warning {
+	color: #53330E; /*brown*/
+}
+
+.well, .breadcrumb {
+background-color: #ebebeb;
+}
+
+.breadcrumb {
+  border: 1px solid #e3e3e3;
+}
+
+.bordered {
+	border-bottom: 3px solid #53330E;
+}
+
+#owl-main .item{
+  margin: 0px;
+}
+
+#owl-main .item img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+#owl-last-photo .item{
+  margin: 3px;
+}
+#owl-last-photo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+	
+/* Home Page Carousel */
+
+header.carousel {
+    height: 50%;
+}
+
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+    height: 100%;
+}
+
+header.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/* 404 Page Styles */
+
+.error-404 {
+    font-size: 100px;
+}
+
+/* Pricing Page Styles */
+
+.price {
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.price sup {
+    top: -20px;
+    left: 2px;
+    font-size: 20px;
+	text-decoration: underline;
+}
+
+.period {
+    display: block;
+    font-style: italic;
+}
+
+blockquote {
+    font-size: 12px;
+}
+
+
+.panel-title, .panel-group {
+    font-size: 12px;
+}
+
+/* Footer Styles */
+footer {
+  color: #fff; /*коричневий */
+  padding: 20px 15px;
+  overflow-x: visible;
+  border-top: 0px solid #ff0000;
+  background: transparent;  /*кремовий */
+}
+
+footer a{
+	color:#fff;
+}
+
+footer a:hover{
+	text-decoration:none;
+}
+
+footer #img-bottom-bg {
+	background:url(../images/logo.png) no-repeat left bottom;
+	width:137px;
+	height:157px;
+}
+
+footer .company-name {
+	font-size:24px;
+	
+}
+
+dt {
+  font-weight: normal;
+}
+dd{
+  border-bottom: 1px dashed #dfd7ca;
+}
+
+label {
+  font-weight: 600;
+}
+
+.submenu-header {
+  padding-bottom: 9px;
+  border-bottom: 1px solid #53330E;
+  color: #53330E;
+}
+
+.submenu {
+  padding-left: 0;
+  list-style: none;
+}
+
+.submenu li a:hover, ul .submenu li a:focus{
+  text-decoration: none;
+}
+
+.submenu li a:hover:before {
+  margin: 0 12px 0 0;
+}
+
+.submenu li a:before {
+  font-size: 14px;
+  line-height: 15px;
+  margin: 0 5px 0 0;
+  content: "\f054";
+  font-family: fontawesome;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+
+.le-links {
+  padding-left: 0;
+  list-style: none;
+}
+.le-links li {
+  line-height: 27px;
+}
+.le-links li a {
+  font-size: 14px;
+}
+
+.le-links li a:hover {
+  text-decoration: none;
+}
+
+.le-links li a:hover:before {
+  margin: 0 12px 0 0;
+}
+.le-links li a,
+.le-links li a:before {
+  color: #3d3d3d;
+}
+.le-links li a:before {
+  font-size: 14px;
+  line-height: 15px;
+  margin: 0 5px 0 0;
+  content: "\f105";
+  font-family: fontawesome;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#toTop {
+	position: fixed;
+	bottom: 78px;
+	right: 25px;
+	display: none;
+	filter:alpha(opacity=35);
+	-moz-opacity: 0.35;
+	-khtml-opacity: 0.35;
+	opacity: 0.35;
+}
+
+#map-canvas {
+  	width: 100%; 
+  	height: 300px;
+	margin: 0;
+	padding: 15px;
+}
+
+.icon-animated-vertical {
+	display:inline-block;
+			 animation:vertical 2s 5 ease 2s;
+		  -o-animation:vertical 2s 5 ease 2s;
+		 -ms-animation:vertical 2s 5 ease 2s;
+		-moz-animation:vertical 2s 5 ease 2s;
+	 -webkit-animation:vertical 2s 5 ease 2s;
+}
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+    header.carousel .carousel {
+        height: 70%;
+    }
+	
+	.container-bg {
+	background: #fff;
+	}
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+
+.navbar-default {
+	background: url(../images/fon_dekor_big.jpg) repeat center top fixed;
+  border-color: transparent;
+}
+.navbar-default .navbar-brand {
+  color: #fff;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #5e5e5e;
+  background-color: transparent;
+}
+.navbar-default .navbar-text {
+  color: #fff;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #fff;
+  background-color: #53330e;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #53330e;
+}
+.navbar-default .navbar-nav > .disabled > a,
+.navbar-default .navbar-nav > .disabled > a:hover,
+.navbar-default .navbar-nav > .disabled > a:focus {
+  color: #ccc;
+  background-color: transparent;
+}
+.navbar-default .navbar-toggle {
+  border-color: #53330e;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #53330e;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #53330e;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #fff;
+  background-color: #53330e;
+}
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #fff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #fff;
+    background-color: #53330e;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+}
+.navbar-default .navbar-link {
+  color: #fff;
+}
+.navbar-default .navbar-link:hover {
+  color: #333;
+}
+.navbar-default .btn-link {
+  color: #fff;
+}
+.navbar-default .btn-link:hover,
+.navbar-default .btn-link:focus {
+  color: #333;
+}
+.navbar-default .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-default .btn-link:hover,
+.navbar-default .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-default .btn-link:focus {
+  color: #ccc;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  text-decoration: none;
+  color: #fff;
+  background-color: #53330e;
+}
